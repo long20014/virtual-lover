@@ -1,0 +1,16 @@
+section#main-section {
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+}
+
+#main-container {
+  width: 88vw;
+  height: 95vh;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; 
+  overflow-y: scroll;
+}

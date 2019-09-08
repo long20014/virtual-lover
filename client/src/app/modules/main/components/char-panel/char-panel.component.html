@@ -1,0 +1,66 @@
+<div class="vl-panel" id="char-panel">
+	<div class="tab-place">
+		<button class="tab tab-3 " (click)="activeTab($event); tabSwitch('char-inventory')">Inventory</button>
+		<button class="tab tab-3 active" (click)="activeTab($event); tabSwitch('char-functions')">Functions</button>
+		<button class="tab tab-3" (click)="activeTab($event); tabSwitch('char-character')">Character</button>
+	</div>
+	<div class="panel-container char-container">
+		<div class="tab--hide" id="char-inventory" >
+			<app-inventory-slot 
+				*ngFor="let item of items"
+				[itemIconUrl]='item.iconUrl'
+			></app-inventory-slot>			
+		</div>
+		<div class="" id="char-functions">
+			<div class="main-function">
+				<div class="grid-item">
+					<button class="vl-btn" id="working">Working</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="restaurant">Restaurant</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="hotel">Hotel</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="playground">Playground</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="hospital">Hospital</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="gym">Gym</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="plaza">Plaza</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="spa">Spa</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="salon">Salon</button>
+				</div>
+				<div class="grid-item">
+					<button class="vl-btn" id="proposal">Proposal</button>
+				</div>
+			</div>
+			<div class="sub-function">
+				<router-outlet></router-outlet>	
+			</div>
+			
+		</div>
+		<div class="panel-container tab--hide" id="char-character">
+			<ul class="stat-panel__stat-list">					
+				<li>Name: darklord</li>
+				<li>Game time: 25 (days)</li>		
+				<li>Money: 1000$</li>
+				<li>Job: Grab Driver</li>
+				<li>Appetite: 80/100</li>					
+				<li>Rating: 15</li>
+				<li>Love: 40/1000</li>								
+			</ul>
+		</div>
+
+	</div>		
+</div>
+

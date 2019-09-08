@@ -1,0 +1,46 @@
+<div class="vl-panel" id="lover-panel">
+	<div class="tab-place">
+		<button class="tab tab-1 active" (click)="activeTab($event); tabSwitch('log-container')">Logs</button>
+		<button class="tab tab-1" (click)="activeTab($event); tabSwitch('quest-container')">Quest</button>
+		<button class="tab tab-1" (click)="activeTab($event); tabSwitch('avatar-container')">Avatar</button>		
+	</div>
+	<div class="lover-container">
+		<div id="log-container" class="panel-container">
+			<div id="lover-info">
+				<img src="assets/img/background/Shinozaki Ai 07.jpg" alt="">					
+			</div>
+			<div id="lover-log">
+				<p>Game start...</p>
+				<p>Your lover is hungry! (appetite 40/100)</p>
+				<p>You get your lover to a restaurant.</p>
+				<p>You call a beefsteak.</p>
+				<p>Money -200</p>
+				<p>Your lover is full (appetite 100/100)</p>
+				<p>Happiness +3</p>
+				<p>Your lover caught a fever (health 60/100)</p>
+				<p>Happiness -4</p>
+				<p>You get your lover to a hospital.</p>
+				<p>Money -300</p>
+				<p>Your lover is fine now (health 90/100).</p>
+				<p>Happiness +2</p>
+			</div>
+			<div id="lover-chat-box">
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+			</div>				
+		</div>
+
+		<div id="quest-container" class="panel-container tab--hide">
+			<div id="quest-list"></div>
+			<div id="quest-desc"></div>
+		</div>
+
+		<div id="avatar-container" class="panel-container tab--hide">
+			<div id="lover-info">
+				<img src="assets/img/background/Shinozaki Ai 07.jpg" alt="">					
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</div>

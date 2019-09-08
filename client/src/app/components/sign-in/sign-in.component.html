@@ -1,0 +1,49 @@
+<div class="form-wrapper">
+	<div class="form-container form-login active">
+		<h1>Login</h1>
+		<form action="" id="login-form">			
+			<div class="input-group">
+				<i class="fa fa-user"></i>
+				<input type="text" placeholder="Email address" required>
+				<span class="bar"></span>
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock"></i>
+				<input type="password" placeholder="Password" required>
+				<span class="bar"></span>
+			</div>
+			<div id="sign-up-link" class="switch-link">
+				<p class="text-center"><a (click)="switch_sign_up()">Not having an account? Sign up</a></p>
+			</div>
+			<div class="input-group">
+				<button class="form-btn btn-login">Login</button>
+			</div>
+		</form>
+	</div>
+	<div class="form-container form-sign-up">
+		<h1>Sign up</h1>
+		<form action="" id="login-form">			
+			<div class="input-group">
+				<i class="fa fa-user"></i>
+				<input type="text" placeholder="Email address" required>
+				<span class="bar"></span>
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock"></i>
+				<input type="password" placeholder="Password" required>
+				<span class="bar"></span>
+			</div>
+			<div class="input-group">
+				<i class="fa fa-lock"></i>
+				<input type="password" placeholder="Confirmed password" required>
+				<span class="bar"></span>
+			</div>
+			<div id="login-link" class="switch-link">
+				<p class="text-center"><a (click)="switch_login()">Already have an account? Log in</a></p>
+			</div>
+			<div class="input-group">
+				<button class="form-btn btn-sign-up">Sign up</button>
+			</div>
+		</form>		
+	</div>		
+</div>

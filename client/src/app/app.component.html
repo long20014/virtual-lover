@@ -1,0 +1,9 @@
+<app-header (navShow_header) = "navShowHandler($event)"></app-header>
+<section id="main-section">
+	<app-navigator 
+		[style.left]="navShow_app ? '0' : '-55vw'"		
+	></app-navigator>
+	<div id="main-container">		
+		<router-outlet></router-outlet>
+	</div>
+</section>

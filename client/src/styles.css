@@ -1,0 +1,167 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+  --metal: linear-gradient(to right, rgba(255,255,255,.4), rgba(0,0,0,.7));
+  --lover: linear-gradient(to top, rgba(255,0,6,1), rgba(252,6,117,1));  
+  --lover-red: rgba(255,0,6,1);
+  --lover-pink: rgba(252,6,117,1);
+  --lover-green: rgba(20, 119, 9, 0.8);
+  --lover-cyan: rgba(33, 133, 233, 0.8);
+  --lover-orange: #e1b214; 
+} 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-size: 10px;  
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+  border: 2px solid #F5F5F5;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: 2px solid #F5F5F5;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background: var(--lover-pink);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%,
+                    color-stop(.5, rgba(255, 255, 255, .2)),
+                    color-stop(.5, transparent), to(transparent))
+}
+
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+button:focus {
+  outline: none;
+}
+
+.vl-panel {
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 10px;  
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 2px 3px rgba(0, 0, 0, 0.9); 
+  height: 540px;
+  margin-top: 3vh;
+  width: 320px;
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  background: none;
+  overflow: hidden;  
+}
+
+#stat-panel, #char-panel, #lover-panel {
+}
+
+.panel-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: flex-start; 
+  width: 100%;
+  height: 488px;
+  background: white;
+}
+
+.tab--hide {
+  display: none !important;
+}
+
+.tab-place {
+  width: 100%;
+  height: 50px;
+  background: rgba(33, 33, 33, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around; }
+
+.tab-place .tab {
+  width: 30%;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background: #c3c3c3;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer; 
+  transition: all 0.3s ease 
+}
+
+.tab-place .active {
+  background: #fff;
+}
+
+.tab-place button {
+  all: unset;
+}
+
+.tab-place .tab:hover {
+  background: #fff;
+}
+
+
+.stat-panel__stat-list {
+  display: flex;
+  flex-flow: column wrap;  
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding: 0 5% 0 5%; }
+
+
+.stat-panel__stat-list > li {
+  position: relative;
+  list-style: none;
+  max-width: 100%;  
+  border-radius: 10px;  
+  padding: 5px;
+  line-height: 20px;
+  color: white; }
+
+@media only screen and (max-width: 768px) {
+  app-navigator {    
+    position: absolute;
+    left: -55vw;
+    transition: all 0.5s ease;    
+  }
+	
+  #left-side-menu {
+    width: 50vw !important;
+  }
+
+  #main-container {
+  	width: 100% !important;
+  }
+
+  #lover-panel, #stat-panel,
+	#char-panel {
+		width: 320px;
+	}
+
+	#header .burger {
+	  display: block !important;		
+		margin-right: 10px;
+	}
+
+	#header .burger .line{
+	  width: 20px;
+	  height: 2px;
+	  background: #f71038	;
+	  margin-bottom: 5px;
+	  transition: all 0.25s ease
+	}
+
+	#header .burger:hover .line {
+		background: #ea08cd;
+	}
+}
+

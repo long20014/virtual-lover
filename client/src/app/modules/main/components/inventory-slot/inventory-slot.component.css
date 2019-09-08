@@ -1,0 +1,17 @@
+.inventory__item {
+  border-radius: 5px;
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+  background: #b1b2b3;
+  transition: all 0.3s ease }
+
+  .inventory__item:hover {
+    border-color: red;
+    background: white;
+  }
+
+.inventory__item > img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover; }
