@@ -13,10 +13,10 @@
 		</div>
 		<div class="" id="char-functions">
 			<div class="main-function">
-				<div class="grid-item">
-					<button class="vl-btn" id="working">Working</button>
+				<div *ngFor="let button of buttons"class="grid-item">
+					<button (click)='button.method()' class="vl-btn" [id]=[button.id]>{{button.label}}</button>
 				</div>
-				<div class="grid-item">
+				<!-- <div class="grid-item">
 					<button class="vl-btn" id="restaurant">Restaurant</button>
 				</div>
 				<div class="grid-item">
@@ -42,7 +42,7 @@
 				</div>
 				<div class="grid-item">
 					<button class="vl-btn" id="proposal">Proposal</button>
-				</div>
+				</div> -->
 			</div>
 			<div class="sub-function">
 				<router-outlet></router-outlet>	
@@ -50,14 +50,15 @@
 			
 		</div>
 		<div class="panel-container tab--hide" id="char-character">
-			<ul class="stat-panel__stat-list">					
-				<li>Name: darklord</li>
-				<li>Game time: 25 (days)</li>		
-				<li>Money: 1000$</li>
-				<li>Job: Grab Driver</li>
-				<li>Appetite: 80/100</li>					
-				<li>Rating: 15</li>
-				<li>Love: 40/1000</li>								
+			<ul class="stat-panel__stat-list">
+				<li *ngFor="let stat of stat_list">{{stat.key}}: {{stat.value}}</li>					
+				<!-- <li>Name: darklord</li>
+						<li>Game time: 25 (days)</li>		
+						<li>Money: 1000$</li>
+						<li>Job: Grab Driver</li>
+						<li>Appetite: 80/100</li>					
+						<li>Rating: 15</li>
+						<li>Love: 40/1000</li>						 -->		
 			</ul>
 		</div>
 

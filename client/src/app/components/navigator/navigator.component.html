@@ -9,13 +9,15 @@
 	</div>
 	
 	<ul id="nav">
-		<li><a routerLink="" routerLinkActive="active">Home</a></li>
+		<!-- <li><a routerLink="" routerLinkActive="active">Home</a></li>
 		<li><a routerLink="/main" routerLinkActive="active">Main</a></li>
 		<li><a routerLink="/shop" routerLinkActive="active">Shop</a></li>
 		<li><a routerLink="/community" routerLinkActive="active">Community</a></li>
 		<li><a routerLink="/support" routerLinkActive="active">Support</a></li>
 		<li><a routerLink="/settings" routerLinkActive="active">Settings</a></li>
-		<li><a routerLink="/login" routerLinkActive="active">Login</a></li>
-		
+		<li><a routerLink="/login" routerLinkActive="active">Login</a></li> -->
+		<li *ngFor="let link of links">
+			<a [routerLink]="[link.path]" routerLinkActive="active">{{link.label}}</a>
+		</li>
 	</ul>
 </div>

@@ -10,19 +10,17 @@
 				<img src="assets/img/background/Shinozaki Ai 07.jpg" alt="">					
 			</div>
 			<div id="lover-log">
+				<p *ngFor="let log of logs" [class]=[log.status]>{{log.msg}}</p>
+				<!-- 
 				<p>Game start...</p>
-				<p>Your lover is hungry! (appetite 40/100)</p>
+				<p>Your lover is hungry! (Appetite 40/100)</p>
 				<p>You get your lover to a restaurant.</p>
-				<p>You call a beefsteak.</p>
-				<p>Money -200</p>
-				<p>Your lover is full (appetite 100/100)</p>
-				<p>Happiness +3</p>
-				<p>Your lover caught a fever (health 60/100)</p>
-				<p>Happiness -4</p>
-				<p>You get your lover to a hospital.</p>
-				<p>Money -300</p>
-				<p>Your lover is fine now (health 90/100).</p>
-				<p>Happiness +2</p>
+				<p>You call a beefsteak. (Money -200)</p>				
+				<p>Your lover is full (Appetite +30, Happiness +3)</p>				
+				<p>Your lover caught a fever (Health -30, Happiness -4)</p>				
+				<p>You get your lover to a hospital. (Money -300)</p>				
+				<p>Your lover is fine now (Health +30, Happiness +2).</p>
+				-->
 			</div>
 			<div id="lover-chat-box">
 				<textarea name="" id="" cols="30" rows="10"></textarea>

@@ -1,7 +1,37 @@
 <app-header (navShow_header) = "navShowHandler($event)"></app-header>
 <section id="main-section">
 	<app-navigator 
-		[style.left]="navShow_app ? '0' : '-55vw'"		
+		[style.left]="navShow_app ? '0' : '-55vw'"
+		[links] = '[
+			{
+				path: "",
+				label: "Home"
+			},
+			{
+				path: "/main",
+				label: "Main"
+			},
+			{
+				path: "/shop",
+				label: "Shop"
+			},
+			{
+				path: "/community",
+				label: "Community"
+			},
+			{
+				path: "/support",
+				label: "Support"
+			},
+			{
+				path: "/settings",
+				label: "Settings"
+			},
+			{
+				path: "/login",
+				label: "Login"
+			}
+		]'		
 	></app-navigator>
 	<div id="main-container">		
 		<router-outlet></router-outlet>

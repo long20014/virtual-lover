@@ -59,3 +59,21 @@
 #quest-desc {
   height: 150px;
 }
+
+#lover-log .info {
+  color: green;
+}
+
+#lover-log .warning {
+  color: black;
+}
+
+#lover-log .alert {
+  color: red;
+  padding: 0;
+  margin: 0 0 10px
+}
+
+#lover-log .action {
+  color: blue;
+}

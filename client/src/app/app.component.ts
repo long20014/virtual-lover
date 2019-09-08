@@ -7,7 +7,7 @@ import { Component, OnChanges } from '@angular/core';
 })
 export class AppComponent implements OnChanges {
   title = 'virtual-lover';
-  public navShow_app : boolean;
+  public navShow_app : boolean;  
 
   ngOnChanges() {
   }

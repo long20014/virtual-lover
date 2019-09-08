@@ -7,7 +7,7 @@ import { Component, OnInit, OnChanges, Input } from '@angular/core';
 })
 export class NavigatorComponent implements OnInit, OnChanges {
 
-	
+	@Input('links') links : []
 
 	constructor() { }
 

@@ -7,6 +7,45 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogPanelComponent implements OnInit {
 
+  public logs = [
+    { 
+      msg: `Game start...`, 
+      status: 'warning'
+    },
+    {
+      msg: `Your lover is hungry! (appetite 40/100)`, 
+      status: 'alert'
+    },
+    { 
+      msg: `You get your lover to a restaurant.`,
+      status: 'action'
+    },
+    { 
+      msg: `You call a beefsteak. (Money -200)`,
+      status: 'action'
+    },
+    { 
+      msg: `Your lover is full (Appetite +30, Happiness +3)`,
+      status: 'info'  
+    },    
+    { 
+      msg: `Your lover caught a fever! (Health -30, Happiness -4)`,
+      status: 'alert'
+    },
+    { 
+      msg: `You get your lover to a hospital.`,
+      status: 'action' 
+    },
+    { 
+      msg: `You order a well treatment. (Money -300)`,
+      status: 'action' 
+    },
+    {
+     msg: `Your lover is fine now. (Health +30, Happiness +2).`,
+     status: 'info'
+   },    
+  ]
+
   constructor() { }
 
   ngOnInit() {
